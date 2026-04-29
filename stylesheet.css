@@ -13,6 +13,7 @@
 body {
     color: #ededed;
     background-color: #081b29;
+    overflow-x: hidden;
 }
 
 .header {
@@ -84,6 +85,8 @@ body {
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
+    max-width: 100%;
+    height: auto;
 }
 
 .home-content h3 {
@@ -692,5 +695,233 @@ main.row {
     }
 }
 
+@media (max-width: 1200px) {
+    .container {
+        padding: 120px 40px;
+    }
 
+    .container0 {
+        padding: 80px 40px;
+    }
+
+    .about-text h2,
+    .sub-title,
+    .main-text h2 {
+        font-size: 48px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .icon-image {
+        width: 420px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 16px 20px;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .logo {
+        padding-left: 0;
+        font-size: 22px;
+    }
+
+    .navbar {
+        padding-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px 14px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .home {
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 120px 7% 70px;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .home-sc1 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .icon-image {
+        width: min(80vw, 400px);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 0;
+        padding: 70px 7%;
+    }
+
+    .about-text p {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .tech,
+    .softskills {
+        margin-top: 0;
+    }
+
+    .container,
+    .container0 {
+        padding: 70px 7%;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 24px;
+    }
+
+    .services-list div {
+        padding: 28px;
+    }
+
+    .education {
+        margin-top: 0;
+        padding: 70px 0;
+    }
+
+    .edu {
+        padding: 0 7%;
+    }
+
+    main.row {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-text {
+        padding-top: 80px;
+    }
+
+    .portfolio-centent {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .contact {
+        margin-top: 80px;
+        padding: 0 7%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        position: static;
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .home {
+        min-height: auto;
+        padding: 40px 6% 40px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn-box {
+        padding: 14px 20px;
+        font-size: 14px;
+    }
+
+    .about-text h2,
+    .sub-title,
+    .main-text h2,
+    .contact-text h2 {
+        font-size: 34px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    .col header.title {
+        font-size: 36px;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+    }
+
+    .col .conts {
+        padding: 0 14px;
+    }
+
+    .col .conts .box {
+        padding: 16px;
+    }
+
+    .services-list div {
+        padding: 22px;
+        font-size: 18px;
+    }
+
+    .services-list div h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-centent {
+        grid-template-columns: 1fr;
+    }
+
+    .layer {
+        padding: 0 18px;
+    }
+
+    .layer p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .contact-text h4,
+    .contact-text p,
+    .contact-list li {
+        font-size: 17px;
+    }
+}
 
